@@ -8,7 +8,6 @@ console.log('client side js is loaded');
 // }).catch((e) => {
 
 // });
-
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('input');
 const messageOne = document.getElementById('message-one');
