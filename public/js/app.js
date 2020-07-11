@@ -1,11 +1,3 @@
-// const url = 'http://puzzle.mead.io/puzzle';
-// fetch(url).then((response) => {
-//     response.json().then((data) => {
-//         console.log(data);
-//     });
-// }).catch((e) => {
-
-// });
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('input');
 const messageOne = document.getElementById('message-one');
@@ -16,7 +8,7 @@ weatherForm.addEventListener('submit', (e) => {
     messageOne.textContent = "Loading...";
     messgaeTwo.textContent = '';
     const searchValue = search.value;
-    const url = `http://localhost:3000/weather?address=${searchValue}`;
+    const url = `/weather?address=${searchValue}`;
 
     fetch(url).then((response) => {
         response.json().then((data) => {
